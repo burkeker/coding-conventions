@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Coding-conventions by burkeker</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Coding-conventions</h1>
+        <p>The style guides for GBIF developments in PHP, Java, HTML, etc.</p>
+
+        <p class="view"><a href="https://github.com/burkeker/coding-conventions">View the Project on GitHub <small>burkeker/coding-conventions</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/burkeker/coding-conventions/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/burkeker/coding-conventions/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/burkeker/coding-conventions">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="coding-conventions" class="anchor" href="#coding-conventions"><span class="octicon octicon-link"></span></a>coding-conventions</h1>
+
+<p>The style guides for GBIF developments in PHP, Java, HTML, etc.</p>
+
+<h3>
+<a name="principles-for-html-markup-and-css" class="anchor" href="#principles-for-html-markup-and-css"><span class="octicon octicon-link"></span></a>Principles for HTML Markup and CSS</h3>
+
+<ul>
+<li>These guidelines are encouraged as the default best practice.</li>
+<li>Developers can go outside these guidelines from time to time, but any significant deviation should be raised within the team, and the guidelines reviewed.</li>
+<li>All styles introduced should follow the naming convention for CSS rules below.</li>
+<li>All styling selectors will be class based only(!).</li>
+</ul><h4>
+<a name="use-of-article-section-aside-and-div" class="anchor" href="#use-of-article-section-aside-and-div"><span class="octicon octicon-link"></span></a>Use of <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code> and <code>&lt;div&gt;</code>
+</h4>
+
+<ul>
+<li>We use <code>article</code> to define an independent entity of content. For example, a news item, a species page, a featured-data-use case or a consultation request.</li>
+<li>We use <code>section</code> in two scenarios:
+
+<ul>
+<li>Immediately under <code>&lt;body&gt;</code>, a <code>&lt;section&gt;</code> is used to define major functional blocks of the page, e.g., banner, navigation, or footer credits. For the functional section that contains the key content of the page, we use <code>&lt;main&gt;</code> instead.</li>
+<li>Inside <code>&lt;article&gt;</code>, a <code>&lt;section&gt;</code> is used to define content blocks of an article. For example, in a species detail page, which should be an <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> is used to define classification, description or geography.</li>
+</ul>
+</li>
+<li>Each article and each section within an article should have an “id” unique to the page and an inline page anchor to allow linking to the article / section.</li>
+<li>On a search results page (e.g. list of news items), the container for the result is <code>&lt;main&gt;</code>,  and <code>&lt;article&gt;</code> is used for each result;</li>
+<li>
+<code>&lt;aside&gt;</code> is used only when the content is considered supplementary, e.g. external links. The wrapping element of <code>&lt;aside&gt;</code> determines at which level the content is supplementary, i.e., if <code>&lt;aside&gt;</code> is nested within <code>&lt;article&gt;</code>, it is supplementary to the article. Or if it is placed outside <code>&lt;article&gt;</code>, it is supplementary to the page.</li>
+<li>For contents that have no suitable semantic element or in doubt, use <code>&lt;div&gt;</code> or ask.</li>
+</ul><h4>
+<a name="naming-convention-for-css-rules" class="anchor" href="#naming-convention-for-css-rules"><span class="octicon octicon-link"></span></a>Naming convention for CSS rules</h4>
+
+<h4>
+<a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h4>
+
+<ol>
+<li>
+<a href="http://html5doctor.com/the-article-element/">The article element</a>.</li>
+<li>
+<a href="http://www.w3.org/TR/html5/sections.html#the-article-element">W3C definition of article</a>.</li>
+<li>
+<a href="http://www.w3.org/TR/html5/sections.html#the-section-element">W3C definition of section</a>.</li>
+<li>
+<a href="http://html5doctor.com/you-can-still-use-div/">You can still use div</a>.</li>
+<li>
+<a href="http://www.w3.org/TR/html5/grouping-content.html#the-div-element">W3C definition of div</a>.</li>
+<li>
+<a href="http://html5doctor.com/the-main-element/">The main element</a>.</li>
+<li>
+<a href="http://html5doctor.com/aside-revisited/">Aside revised</a>.</li>
+<li>
+<a href="http://www.w3.org/TR/html5/sections.html#the-aside-element">W3C definition of aside</a>.</li>
+<li>
+<a href="http://getbootstrap.com/css/#grid-intro">Bootstrap grid introduction</a>.</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/burkeker">burkeker</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
