@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  </head>
+  <body class="container">
+  	<section class="row">
+			<nav class="col-md-12">
+	  		<h1>Section masthead</h1>
+			</nav>
+  	</section>
+  	<section class="row">
+			<div class="col-md-12">
+	  		<h1>Section banner</h1>
+				<p>This page abstracts generic template pages.</p>
+			</div>
+  	</section>
+		<main class="row">
+      <article class="col-md-12">
+				<div class="row"> <!-- Required by Bootstrap when we need to nest columns. Compare page with/without this div. -->
+					<section class="col-md-8"> <!-- Suggest: before this is a meaningful section, use div. -->
+		          <h2>article title H2</h2>
+					</section>
+		      <aside class="col-md-4">
+		        <h3>Aside title H3</h3>
+		      </aside>
+				</div>
+			</article>
+
+      <article class="col-md-12 well">
+				<div class="row"> <!-- Required by Bootstrap when we need to nest columns. Compare page with/without this div. Without this div, we don't have full width in the nested column. -->
+					<section class="col-md-8"> <!-- Suggest: before this is a meaningful section, use div. -->
+	          <h2>article title H2</h2>
+					</section>
+		      <aside class="col-md-4">
+		        <h3>Aside title H3</h3>
+		      </aside>
+				</div>
+			</article>
+
+      <article class="col-md-12 border">
+				<div class="row"> <!-- Required by Bootstrap when we need to nest columns. Compare page with/without this div. -->
+					<section class="col-md-8"> <!-- Suggest: before this is a meaningful section, use div. -->
+	          <h2>article title H2</h2>
+					</section>
+		      <aside class="col-md-4">
+		        <h3>Aside title H3</h3>
+		      </aside>
+				</div>
+			</article>
+
+		</main>
+		<section class="row">
+			<div class="col-md-12">
+				<h1>Section footer links</h1>
+			</div>
+		</section>
+  </body>
+</html>
